@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            
+    var schools = [
+        {
+            name:'Ort',
+            students:[
+                {
+                firstName: 'Danny',
+                lastName: 'Dayan',
+                average: 84
+                },
+                {
+                firstName: 'Moshe',
+                lastName: 'Moskovich',
+                average: 96
+                }
+            ] 
+        },
+        {
+            name:'Amal',
+            students:[
+                {
+                firstName: 'Yossi',
+                lastName: 'Mizrahi',
+                average: 79
+                },
+                {
+                firstName: 'Dan',
+                lastName: 'Mizrahi',
+                average: 79
+                }
+            ]
+        }
+    ];
+        alert(schools[0].students.length);    
+    //alert(schools.length);
+    for(var i=0; i<schools.length; i++){
+      var  message =schools[i].name;
+        alert(message);
+        for(var j=0;j<schools[i].students.length;j++){
+            alert(schools[i].students[j].firstName);
+        }
+    }
+            
+            
+        </script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+    </body>
+</html>
