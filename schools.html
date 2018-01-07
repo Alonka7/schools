@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <script>
+            
+             var students = [
+                 {
+                     firstName: 'Danny',
+                     lastName: 'Dayan',
+                     average: 84
+                 },
+                 {
+                     firstName: 'Moshe',
+                     lastName: 'Moskovich',
+                     average: 96
+                 },
+                 {
+                     firstName: 'Yossi',
+                     lastName: 'Mizrahi',
+                     average: 79
+                 }
+             ];
+          
+            for(var i=0; i<students.length; i++){
+                var message = students[i].firstName + ' ' + students[i].lastName;
+                message = message + 'has an average of ' + students[i].average;
+                if(students[i].average>=95){
+                    message += '..VERY GOOD!';
+                } else if(students[i].average>=80){
+                    message += '..NOT BAD!';
+                } else{
+                    message += '..YOU SUCK';
+                }
+                
+                
+                alert(message);
+            }
+            
+          //  alert(students.length);
+           /* for(var i=0;i<students.length;i++){
+                alert(students[i]);
+            }*/
+            
+            
+            
+        var myString = 'string';
+            var myNum = 45.5;
+            var myArr = [1,2,3, 'Arik'];
+            var myObj = {
+                firstName: 'Arik',
+                lastName: 'Liber',
+                favorites:{
+                    band: 'enigma',
+                    food: 'pizza'
+                }
+            };
+            
+            
+            
+           
+           /* if(myObj.favorites.band === 'enigma'&& myObj.favorites.food === 'pizza'){
+                alert('looks like arik');
+            } else {
+                alert('you are not arik for sure');
+            }*/
+            
+           /*  if(myObj.favorites.food !== 'humburger'){
+                alert('not humburger why?!')
+            } */
+            
+          /*  if(myObj.favorites.food === 'pizza'){
+                alert('welcome to Italy!')
+            } else {
+                alert('not pizza')
+            }*/
+          //  alert(myObj.favorites.band);
+            //  alert(myString);
+           // alert(myNum);
+            alert(myArr[0]);
+            alert(myArr[1]);
+            alert(myArr[3]);  
+          //  alert(myObj.firstName);
+          //  alert(myObj.lastName);
+            
+        
+        </script>
+    </head>
+    <body>
+        <h1>hello world!</h1>
+    </body>
+</html>
