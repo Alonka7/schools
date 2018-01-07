@@ -2,89 +2,52 @@
     <head>
         <script>
             
-             var students = [
-                 {
-                     firstName: 'Danny',
-                     lastName: 'Dayan',
-                     average: 84
-                 },
-                 {
-                     firstName: 'Moshe',
-                     lastName: 'Moskovich',
-                     average: 96
-                 },
-                 {
-                     firstName: 'Yossi',
-                     lastName: 'Mizrahi',
-                     average: 79
-                 }
-             ];
-          
-            for(var i=0; i<students.length; i++){
-                var message = students[i].firstName + ' ' + students[i].lastName;
-                message = message + 'has an average of ' + students[i].average;
-                if(students[i].average>=95){
-                    message += '..VERY GOOD!';
-                } else if(students[i].average>=80){
-                    message += '..NOT BAD!';
-                } else{
-                    message += '..YOU SUCK';
+    var schools = [
+        {
+            name:'Ort',
+            students:[
+                {
+                firstName: 'Danny',
+                lastName: 'Dayan',
+                average: 84
+                },
+                {
+                firstName: 'Moshe',
+                lastName: 'Moskovich',
+                average: 96
                 }
-                
-                
-                alert(message);
-            }
-            
-          //  alert(students.length);
-           /* for(var i=0;i<students.length;i++){
-                alert(students[i]);
-            }*/
-            
-            
-            
-        var myString = 'string';
-            var myNum = 45.5;
-            var myArr = [1,2,3, 'Arik'];
-            var myObj = {
-                firstName: 'Arik',
-                lastName: 'Liber',
-                favorites:{
-                    band: 'enigma',
-                    food: 'pizza'
+            ] 
+        },
+        {
+            name:'Amal',
+            students:[
+                {
+                firstName: 'Yossi',
+                lastName: 'Mizrahi',
+                average: 79
+                },
+                {
+                firstName: 'Dan',
+                lastName: 'Mizrahi',
+                average: 79
                 }
-            };
+            ]
+        }
+    ];
+        alert(schools[0].students.length);    
+    //alert(schools.length);
+    for(var i=0; i<schools.length; i++){
+      var  message =schools[i].name;
+        alert(message);
+        for(var j=0;j<schools[i].students.length;j++){
+            alert(schools[i].students[j].firstName);
+        }
+    }
             
             
-            
-           
-           /* if(myObj.favorites.band === 'enigma'&& myObj.favorites.food === 'pizza'){
-                alert('looks like arik');
-            } else {
-                alert('you are not arik for sure');
-            }*/
-            
-           /*  if(myObj.favorites.food !== 'humburger'){
-                alert('not humburger why?!')
-            } */
-            
-          /*  if(myObj.favorites.food === 'pizza'){
-                alert('welcome to Italy!')
-            } else {
-                alert('not pizza')
-            }*/
-          //  alert(myObj.favorites.band);
-            //  alert(myString);
-           // alert(myNum);
-            alert(myArr[0]);
-            alert(myArr[1]);
-            alert(myArr[3]);  
-          //  alert(myObj.firstName);
-          //  alert(myObj.lastName);
-            
-        
         </script>
     </head>
     <body>
-        <h1>hello world!</h1>
+        <h1>Hello World</h1>
     </body>
 </html>
